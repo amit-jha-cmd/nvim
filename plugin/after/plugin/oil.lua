@@ -61,6 +61,7 @@ require("oil").setup({
 		["q"] = "actions.close",       -- quit oil quickly
 		["<CR>"] = "actions.select",   -- open file/directory
 		["<C-v>"] = "actions.select_vsplit", -- open in vsplit
+
 		["<C-x>"] = "actions.select_split", -- open in hsplit
 		["<C-t>"] = "actions.select_tab", -- open in new tab
 

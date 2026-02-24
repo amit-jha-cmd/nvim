@@ -26,3 +26,5 @@ vim.keymap.set('t', '<leader>et', [[<C-\><C-n>]], { noremap = true, silent = tru
 
 -- Toggle terminal with <leader>t
 vim.keymap.set("n", "<leader>t", "<CMD>ToggleTerm<CR>", { desc = "Toggle terminal" })
+
+vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = 'Go to definition' })

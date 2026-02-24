@@ -35,6 +35,13 @@ return require('packer').startup(function(use)
 	use "saadparwaiz1/cmp_luasnip"
 	use "L3MON4D3/LuaSnip"
 
+	require('telescope').setup {
+		defaults = {
+			file_ignore_patterns = {
+				"node_modules"
+			}
+		}
+	}
 
 	-- mason setup
 	require("mason").setup()
@@ -67,4 +74,5 @@ return require('packer').startup(function(use)
 		end
 	}
 
+	use { 'ibhagwan/fzf-lua' }
 end)
